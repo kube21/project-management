@@ -1,0 +1,40 @@
+@import '../../assets/scss/Common';
+
+.login-block {
+  margin: 100px auto 100px auto;
+  max-width: 340px;
+  border: 1px solid $border-color;
+  padding: 20px;
+}
+
+.login-form {
+  max-width: 300px;
+}
+.login-form-forgot {
+  float: right;
+}
+.login-form-button {
+  width: 100%;
+}
+.login-full {
+  display: flex;
+  flex-direction: row;
+}
+.login-logo {
+  margin: 100px auto;
+}
+.all-logo {
+  display: flex;
+  justify-content: space-between;
+}
+.btn-card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  height: 12rem;
+}
+.download-img {
+  height: 100px;
+  width: 100px;
+}

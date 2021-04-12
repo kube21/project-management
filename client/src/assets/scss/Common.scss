@@ -1,0 +1,193 @@
+@import './CommonColors.scss';
+
+$globalNav-left-indent: 50px;
+
+/***** Sticky Header *****/
+.nonStickyHeader {
+  z-index: 1;
+  background-color: $white;
+  overflow: hidden;
+}
+
+.stickyHeader {
+  z-index: 1;
+  background-color: $white;
+  border-bottom: solid 2px $light-grey;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12),
+    0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+/***** Link *****/
+/*** Disabled ***/
+.disabledLink {
+  text-align: right;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.disabledLink a {
+  text-decoration: none;
+  pointer-events: none; /*Does not work in IE/Edge*/
+  cursor: not-allowed; /*Has to be here in order to display in IE/Edge*/
+}
+
+/***** Toggle Arrows *****/
+.toggleTitle:hover {
+  cursor: pointer;
+  color: $blue;
+}
+
+.toggleTitle:hover .rightArrow {
+  border-color: $blue $blue transparent transparent;
+}
+
+.toggleTitle:hover .downArrow {
+  border-color: transparent $blue $blue transparent;
+}
+
+.arrowHead {
+  margin-right: 0.5em;
+  display: inline-block;
+  border-style: solid;
+  transform: rotate(45deg);
+  position: relative;
+}
+
+/***** Info Tooltip Common  *****/
+/*
+ * Not set in InfoTooltip as default to give more ability to reuse
+ * it as needed. Common styling for it found here
+ */
+.infoTooltip_Container {
+  display: inline-block;
+}
+
+.infoTooltip_ModalIcon {
+  height: 0.7em;
+  width: 0.7em;
+  margin-left: 0.2em;
+}
+
+.infoTooltip_ModalIcon:hover {
+  cursor: pointer;
+}
+
+.infoTooltip_Content {
+  max-width: 20em;
+}
+
+/***** ANT Close X button Common  *****/
+/*
+ * Customizing
+*/
+
+.ant-drawer-close {
+  right: 15px !important;
+  color: #1890ff !important;
+  font-size: 32px !important;
+  background-color: aliceblue;
+  border-radius: 50%;
+}
+
+.ant-drawer-close:focus,
+.ant-drawer-close:hover {
+  right: 15px !important;
+  color: #fff !important;
+  font-size: 32px !important;
+  background-color: #1890ff;
+  border-radius: 50%;
+}
+
+/***** Font Weight Bold *****/
+.fontBoldItalic {
+  font-weight: 'bold';
+  font-style: italic;
+}
+
+/***** Font Weight Bold *****/
+.textRightAlign {
+  text-align: 'right' !important;
+}
+
+.centerText {
+  text-align: center;
+}
+
+.headerStyle {
+  background-color: #fff !important;
+  color: $header-loggin-bgcolor;
+  font-size: 24px;
+}
+
+.contentStyle {
+  margin: 12px 12px 1px 12px;
+}
+
+.contentInnerDivStyle {
+  padding: 12px;
+  background-color: #fff;
+  min-height: 500px;
+}
+
+.layoutStyle {
+  min-height: 100vh;
+}
+.delete-icon {
+  color: red;
+  font-size: 22px;
+  cursor: pointer;
+}
+.disable-btn {
+  font-size: 22px;
+  color: #e57184;
+}
+.href-txt {
+  color: #1890ff;
+}
+
+.small-text {
+  font-size: 12px !important;
+}
+.project-time {
+  margin: 10px 0px;
+}
+.commonText {
+  color: black;
+}
+.ant-select-selection--multiple .ant-select-selection__choice__content {
+  color: black;
+}
+.ant-calendar-picker-input.ant-input {
+  color: black;
+}
+.ant-select-selection-selected-value {
+  color: black;
+}
+.ant-back-top {
+  bottom: unset;
+}
+.image-gallery-thumbnail + .image-gallery-thumbnail {
+  background: black;
+}
+.radio-group {
+  padding: 20px 0;
+}
+.line-height {
+  line-height: 35px;
+}
+.command-bg {
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 10px;
+}
+.instruction-view {
+  padding: 10px 15%;
+  background-color: #fff;
+}
+.card-footer {
+  line-height: 5px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e8e8e840;
+}
